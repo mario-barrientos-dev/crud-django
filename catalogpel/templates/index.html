@@ -1,0 +1,18 @@
+{% extends 'base_generic.html' %}
+{% block content %}
+
+<h1>Libreria de pelicular</h1>
+<p>Esto es un ejemplo de <em>Libreria de peliculas con Django</em></p>
+
+<h2>Contenido dinamico del sitio</h2>
+
+<p>La libreria a guardado los siguientes registros</p>
+
+<ul>
+    <li><strong>Peliculas: </strong>{{ num_peliculas }}</li>
+    <li><strong>Autores: </strong>{{ num_autor }}</li>
+    <li><strong>Copias disponibles: </strong>{{ num_instancias }}</li>
+    <li><strong>Disponibles: </strong>{{ disponibles }}</li>
+</ul>
+
+{% endblock content %}
